@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaishnavi Gupta | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f14;
+      --card: #1c1c24;
+      --accent: #a855f7;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: fixed;
+      top: 0; width: 100%;
+      background: rgba(15,15,20,0.9);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: var(--text);
+      margin-left: 1rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    nav a:hover { color: var(--accent); }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 6rem 1rem 4rem;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--accent);
+    }
+    .hero p { margin-top: 1rem; color: var(--muted); }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      background: var(--accent);
+      color: #000;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    h2 { margin-bottom: 1.5rem; color: var(--accent); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .socials {
+      margin-top: 1.2rem;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      font-size: 1.4rem;
+      color: var(--text);
+      transition: 0.3s;
+    }
+    .socials a:hover { color: var(--accent); }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+ .skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.percent {
+  color: #b983ff;
+  font-weight: 500;
+}
+
+.progress {
+  height: 6px;
+  background: #2b2c34;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #b983ff, #8e44ff);
+  border-radius: 6px;
+  transition: width 1.4s ease;
+}
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.soft-skills span {
+  background: #b983ff;
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #1c1c24;
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.skill-card h3 {
+  color: #a855f7;
+  margin-bottom: 1rem;
+}
+
+.skill {
+  margin-bottom: 0.9rem;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.progress {
+  background: #2a2a35;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #a855f7, #c084fc);
+  border-radius: 10px;
+  animation: fillBar 1.4s ease forwards;
+}
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: var(--level); }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <strong>Vaishnavi Gupta</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div style="width:100%">
+    <img src="assets/profile.jpg" alt="Vaishnavi Gupta" style="width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;" />
+    <h1>Vaishnavi Gupta</h1>
+    <p>Python Developer | Data Analyst | Data Science Enthusiast</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/vaishnavi-gupta-64885272/" target="_blank" title="LinkedIn">🔗</a>
+      <a href="https://github.com/vaishnavig1020" target="_blank" title="GitHub">💻</a>
+    </div>
+    <a class="btn" href="assets/Vaishnavi_Gupta_Resume.pdf" download>Download Resume</a>
+    <br/>
+    <a class="btn" style="margin-top:0.8rem;background:#fff;color:#000" href="#contact">Connect with Me</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate <strong>Python Developer, Data Analyst, and Data Science Enthusiast</strong> with hands-on experience in building data-driven solutions.
+    I enjoy working with Python for data analysis, automation, and machine learning, and transforming complex datasets into clear insights using SQL and Power BI.
+  </p>
+  <p>
+    My interests lie in <strong>data analytics, data science, and predictive modeling</strong>, where I continuously learn and apply techniques to solve real-world business problems.
+    I have worked on projects across banking, healthcare, and food delivery domains, focusing on accuracy, clarity, and impact.
+  </p>
+</section>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Data Analysis & BI</h3>
+
+      <div class="skill">
+        <div class="skill-header"><span>Power BI</span><span>70%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>DAX</span><span>60%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:60%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>Excel / VBA</span><span>75%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>Power Query</span><span>65%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:65%"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Programming & Databases</h3>
+
+      <div class="skill">
+        <div class="skill-header"><span>SQL</span><span>70%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>Python (Data Analysis)</span><span>65%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:65%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>C++</span><span>50%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:50%"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Data Science & ML</h3>
+
+      <div class="skill">
+        <div class="skill-header"><span>NumPy & Pandas</span><span>65%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:65%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>Matplotlib</span><span>60%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:60%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>Scikit-learn</span><span>55%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:55%"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Web & Tools</h3>
+
+      <div class="skill">
+        <div class="skill-header"><span>HTML</span><span>70%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>CSS</span><span>65%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:65%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>JavaScript</span><span>55%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:55%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header"><span>GitHub</span><span>70%</span></div>
+        <div class="progress"><div class="progress-bar" style="--level:70%"></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="section-title">Soft Skills</h2>
+  <div class="soft-skills">
+    <span>Problem Solving</span>
+    <span>Analytical Thinking</span>
+    <span>Data Storytelling</span>
+    <span>Process Optimization</span>
+    <span>Stakeholder Management</span>
+    <span>Quick Adaptability</span>
+    <span>Effective Communication</span>
+  </div>
+</section>
+
+
+
+<section id="projects">
+  <h2>Projects – Case Studies</h2>
+  <div class="grid">
+
+    <div class="card">
+      <strong>Bank Loan Risk Analysis (Power BI)</strong>
+      <p><strong>Problem:</strong> Identify loan approval trends and potential default risks to support banking decisions.</p>
+      <p><strong>Approach:</strong> Performed data cleaning and exploratory data analysis, created KPIs, and designed interactive dashboards.</p>
+      <p><strong>Impact:</strong> Enabled quick identification of high-risk loan segments and improved reporting efficiency.</p>
+      <p><strong>Tech Stack:</strong> Power BI, DAX, SQL, Excel</p>
+      <p><small>🔖 EDA • Risk Analysis • Business Intelligence</small></p>
+      <a class="btn" href="https://github.com/vaishnavig1020/Bank-Loan-Analysis-PowerBI" target="_blank">⭐ View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <strong>Swiggy Data Analysis using SQL</strong>
+      <p><strong>Problem:</strong> Understand customer behavior and restaurant performance from food delivery data.</p>
+      <p><strong>Approach:</strong> Used joins, subqueries, and aggregations to answer real-world business questions.</p>
+      <p><strong>Impact:</strong> Provided insights into peak ordering times, top restaurants, and customer preferences.</p>
+      <p><strong>Tech Stack:</strong> SQL, MySQL</p>
+      <p><small>🔖 Data Analysis • SQL • Business Insights</small></p>
+      <a class="btn" href="https://github.com/vaishnavig1020/Swiggy-SQL-Analysis" target="_blank">⭐ View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <strong>Diabetes Prediction using Machine Learning</strong>
+      <p><strong>Problem:</strong> Predict diabetes outcomes using patient health metrics.</p>
+      <p><strong>Approach:</strong> Applied data preprocessing, feature engineering, model training, and evaluation.</p>
+      <p><strong>Impact:</strong> Built a deployable ML solution with real-time predictions via a web interface.</p>
+      <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Scikit-learn, Flask</p>
+      <p><small>🔖 Machine Learning • Classification • Deployment</small></p>
+      <a class="btn" href="https://github.com/vaishnavig1020/Diabetes-Prediction-Flask-App" target="_blank">⭐ View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">🐍 <strong>Learn Complete Python In Simple Way</strong><br><small>Udemy | 2024</small><br><a class="btn" href="certificates/python_udemy.pdf" target="_blank">View Certificate</a></div>
+    <div class="card">📊 <strong>Introduction to Data Analytics</strong><br><small>Simplilearn | 2025</small><br><a class="btn" href="certificates/data_analytics_simplilearn.pdf" target="_blank">View Certificate</a></div>
+    <div class="card">📈 <strong>Data Visualisation: Empowering Business Insights</strong><br><small>Forage | 2026</small><br><a class="btn" href="certificates/data_visualisation_forage.pdf" target="_blank">View Certificate</a></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <div class="grid">
+    <div class="card">
+      <form action="https://formspree.io/f/xqedzjrd" method="POST" onsubmit="document.getElementById('success-msg').style.display='block';">
+        <label>Your Name</label><br>
+        <input type="text" name="name" required placeholder="Enter your name" style="width:100%;margin:0.4rem 0 1rem;padding:0.6rem;border-radius:10px;border:none;background:#111;color:#fff;" />
+
+        <label>Email Address</label><br>
+        <input type="email" name="email" required placeholder="Enter your email" style="width:100%;margin:0.4rem 0 1rem;padding:0.6rem;border-radius:10px;border:none;background:#111;color:#fff;" />
+
+        <label>Subject</label><br>
+        <input type="text" name="subject" placeholder="What's this about?" style="width:100%;margin:0.4rem 0 1rem;padding:0.6rem;border-radius:10px;border:none;background:#111;color:#fff;" />
+
+        <label>Message</label><br>
+        <textarea name="message" required placeholder="Tell me about your project or opportunity..." rows="4" style="width:100%;margin:0.4rem 0 1rem;padding:0.6rem;border-radius:10px;border:none;background:#111;color:#fff;"></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+        <p id="success-msg" style="display:none;margin-top:1rem;color:#22c55e;font-weight:500;">Message sent successfully ✅</p>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3 style="color:var(--accent)">Let's Connect</h3>
+      <p style="color:var(--muted);margin-bottom:1rem;">I'm always interested in new opportunities and collaborations in data analytics and data science.</p>
+      <p>📧 <a href="mailto:vaishnavig1020@gmail.com" style="color:var(--text)">vaishnavig1020@gmail.com</a></p>
+      <p>📍 India</p>
+      <p>🔗 <a href="https://www.linkedin.com/in/vaishnavi-gupta-64885272/" target="_blank" style="color:var(--text)">LinkedIn Profile</a></p>
+      <p>💻 <a href="https://github.com/vaishnavig1020" target="_blank" style="color:var(--text)">GitHub Profile</a></p>
+      <br/>
+      <a class="btn" href="assets/Vaishnavi_Gupta_Resume.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Vaishnavi Gupta | Data Analyst Portfolio
+</footer>
+<script>
+  window.addEventListener("load", () => {
+    document.querySelectorAll(".progress-bar").forEach(bar => {
+      bar.style.width = bar.dataset.width;
+    });
+  });
+</script>
+
+</body>
+</html>
